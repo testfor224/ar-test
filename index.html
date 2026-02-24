@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-html, body { margin:0; padding:0; height:100%; }
+html, body { margin:0; padding:0; overflow:hidden; height:100%; }
 a-scene { width:100vw; height:100vh; }
 </style>
 
@@ -14,7 +15,14 @@ a-scene { width:100vw; height:100vh; }
 </head>
 
 <body>
-<a-scene mindar-image="imageTargetSrc: targets.mind;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+
+<a-scene
+mindar-image="imageTargetSrc: targets.mind;"
+color-space="sRGB"
+embedded
+vr-mode-ui="enabled: false"
+device-orientation-permission-ui="enabled: false"
+>
 
 <a-assets>
 <img id="arimage" src="sign.png">
@@ -27,5 +35,6 @@ a-scene { width:100vw; height:100vh; }
 </a-entity>
 
 </a-scene>
+
 </body>
 </html>
